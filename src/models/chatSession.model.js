@@ -4,7 +4,7 @@ const chatSessionSchema = new mongoose.Schema(
   {
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', index: true, required: true },
     title: { type: String, trim: true, default: 'New Chat' },
-    model: { type: String, trim: true, default: 'gemini-2.0-flash' },
+    model: { type: String, trim: true, default: 'gemini-2.5-flash' },
     messagesCount: { type: Number, default: 0 },
     lastMessageAt: { type: Date },
     archived: { type: Boolean, default: false },

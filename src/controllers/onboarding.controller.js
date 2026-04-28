@@ -76,7 +76,7 @@ exports.generateSummary = async (req, res) => {
       return res.status(500).json({ message: 'Missing GEMINI_API_KEY in server environment' });
     }
 
-    const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+    const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
     const url = `${endpoint}?key=${apiKey}`;
     const body = {
       contents: [
